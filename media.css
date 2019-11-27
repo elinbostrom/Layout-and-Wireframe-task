@@ -1,0 +1,156 @@
+@media (max-width: 400px) {
+  .navigator {
+    padding: 0.2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: whitesmoke;
+  }
+
+  .navigator div:first-of-type {
+    margin: auto;
+  }
+
+  .navigator div a {
+    margin: 0.5em;
+  }
+
+  main h2 {
+    padding-bottom: 1em;
+    margin-bottom: 0;
+  }
+
+  .first {
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+
+  .second {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .third {
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+
+  .moreboxes a {
+    display: flex;
+    flex-basis: 100px;
+  }
+
+  .overview {
+    padding: 1em;
+  }
+
+  .tasks {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "taskstext tasktext"
+      "taskstext tasktext"
+      "taskimg1 taskimg2"
+      "taskgimg4 taskimg4";
+    grid-gap: 0.5em;
+    min-height: 450px;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+
+  .tasksimg3 {
+    display: none;
+  }
+
+  .tasksimg1 {
+    grid-area: taskimg1
+  }
+
+  .tasksimg2 {
+    grid-area: taskimg2
+  }
+
+  .tasksimg4 {
+    grid-area: taskimg4;
+    grid-column: span 2;
+  }
+
+  .taskspara {
+    grid-area: taskstext
+  }
+
+  .taskspara {
+    display: grid;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .aboutus {
+    grid-template-rows: 0.5fr 1fr;
+    min-height: 600px;
+    grid-gap: 1em;
+    grid-template-areas:
+      "aboutustext aboutustext"
+      "aboutusimg aboutusimg";
+  }
+
+  .aboutusimg {
+    grid-area: aboutusimg;
+    max-width: 400px;
+  }
+
+  .aboutustext {
+    grid-area: aboutustext;
+    padding-left: 1em;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 350px;
+    grid-template-areas:
+      "img1 img2"
+      "text text"
+      "img3 img4";
+    grid-gap: 0.5em;
+    padding: 0.5em;
+  }
+
+  .gallerytext {
+    margin-top: -4em;
+    margin-bottom: -4em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    grid-area: text;
+    z-index: 10;
+    max-width: 350px;
+    width: 100%;
+    place-self: center;
+  }
+
+  .gallerytext h3 {
+    margin: 0
+  }
+
+  .gallerytext p {
+    margin: 0
+  }
+
+  .galleryimg5,
+  .galleryimg6,
+  .galleryimg7,
+  .galleryimg8 {
+    display: none;
+  }
+
+  footer {
+    padding: 2em;
+    margin-top: 1em;
+  }
+
+  .footermenu a {
+    padding: 0.5em;
+  }
+
+}

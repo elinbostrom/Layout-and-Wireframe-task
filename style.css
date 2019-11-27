@@ -21,7 +21,7 @@ main {
 }
 
 .top {
-  height: 60px;
+  padding: 10px;
   width: 100%;
   z-index: 10;
   background-color: whitesmoke;
@@ -31,10 +31,11 @@ main {
   margin: 0.2em;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   background: whitesmoke;
 }
 
-.navigator a:first-of-type {
+.navigator div:first-of-type {
   margin-right: auto;
 }
 
@@ -42,6 +43,7 @@ main {
   margin: 1em;
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 .logo {
@@ -51,6 +53,7 @@ main {
   justify-content: center;
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .rubrik {
@@ -343,6 +346,7 @@ footer {
   text-decoration: none;
   color: black;
   padding: 1em;
+  font-weight: bold;
 }
 
 footer .logo {
