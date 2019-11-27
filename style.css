@@ -158,8 +158,16 @@ article {
   margin: 3em;
 }
 
+.imgwrapper {
+  position: relative;
+  display: block;
+}
+
+.imgwrapper img {
+  position: absolute;
+}
+
 .tasksimg1 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -167,7 +175,6 @@ article {
 }
 
 .tasksimg2 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -175,7 +182,6 @@ article {
 }
 
 .tasksimg3 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -184,7 +190,6 @@ article {
 }
 
 .tasksimg4 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -211,7 +216,6 @@ article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 600px;
-  min-width: 600px;
   grid-gap: 6em;
   background: white;
 }
@@ -244,14 +248,13 @@ article {
     "img1 img2 text img5 img6"
     "img1 img4 text img7 img6"
     "img3 img4 text img7 img8";
-  grid-gap: 2em;
-  max-width: 80%;
+  grid-gap: 1em;
+  max-width: 1200px;
   margin: auto;
   padding-top: 3em;
 }
 
 .galleryimg1 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -260,7 +263,6 @@ article {
 }
 
 .galleryimg2 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -269,7 +271,6 @@ article {
 }
 
 .galleryimg3 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -278,7 +279,6 @@ article {
 }
 
 .galleryimg4 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -287,7 +287,6 @@ article {
 }
 
 .galleryimg5 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -296,7 +295,6 @@ article {
 }
 
 .galleryimg6 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -305,7 +303,6 @@ article {
 }
 
 .galleryimg7 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -314,7 +311,6 @@ article {
 }
 
 .galleryimg8 {
-  background-image: url(https://via.placeholder.com/500);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -328,7 +324,7 @@ article {
   align-self: center;
   margin-left: -4em;
   margin-right: -4em;
-  padding: 4em;
+  padding: 3.5em;
   grid-area: text;
   z-index: 10;
 }
