@@ -1,0 +1,51 @@
+.aboutus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+  grid-gap: 6em;
+  background: white;
+
+  @media ($mobileSize) {
+    grid-template-rows: 0.5fr 1fr;
+    min-height: 600px;
+    grid-gap: 1em;
+    grid-template-areas:
+      "aboutustext aboutustext"
+      "aboutusimg aboutusimg";
+  }
+}
+
+.aboutusimg {
+  background-image: url(https://via.placeholder.com/600);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  @media ($mobileSize) {
+    grid-area: aboutusimg;
+    max-width: 400px;
+  }
+}
+
+.aboutustext {
+  display: grid;
+  align-self: center;
+  max-width: 500px;
+  padding-left: 3em;
+
+  @media ($mobileSize) {
+    grid-area: aboutustext;
+    padding-left: 1em;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  h3 {
+    @media ($mobileSize) {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 1.5fr;
+  min-height: 450px;
+  grid-template-areas:
+    "img1 img2 text img5 img6"
+    "img1 img4 text img7 img6"
+    "img3 img4 text img7 img8";
+  grid-gap: 1em;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 3em;
+
+  @media ($mobileSize) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 350px;
+    grid-template-areas:
+      "img1 img2"
+      "text text"
+      "img3 img4";
+    grid-gap: 0.5em;
+    padding: 0.5em;
+
+  }
+}
+
+.galleryimg1 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  grid-area: img1;
+}
+
+.galleryimg2 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  grid-area: img2;
+}
+
+.galleryimg3 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  grid-area: img3;
+}
+
+.galleryimg4 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  grid-area: img4;
+}
+
+.galleryimg5 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  grid-area: img5;
+
+  @media ($mobileSize) {
+    display: none;
+  }
+}
+
+.galleryimg6 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  grid-area: img6;
+
+  @media ($mobileSize) {
+    display: none;
+  }
+}
+
+.galleryimg7 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  grid-area: img7;
+
+  @media ($mobileSize) {
+    display: none;
+  }
+}
+
+.galleryimg8 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  grid-area: img8;
+
+  @media ($mobileSize) {
+    display: none;
+  }
+}
+
+.gallerytext {
+  background: white;
+  display: grid;
+  align-self: center;
+  margin-left: -4em;
+  margin-right: -4em;
+  padding: 3.5em;
+  grid-area: text;
+  z-index: 10;
+
+  @media ($mobileSize) {
+    margin-top: -4em;
+    margin-bottom: -4em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    grid-area: text;
+    z-index: 10;
+    max-width: 350px;
+    width: 100%;
+    place-self: center;
+  }
+
+  h3 {
+    @media ($mobileSize) {
+      margin: 0;
+    }
+  }
+
+  p {
+    @media ($mobileSize) {
+      margin: 0
+    }
+  }
+}
