@@ -1,0 +1,5 @@
+@mixin fontSizeMargin($fontSize) {
+  margin: 0;
+  font-size: $fontSize;
+  width: 100%;
+}

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(https://via.placeholder.com/1500);
+  background-image: url(pictures/images/header/header-small.jpg);
   flex-grow: 1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,5 +14,9 @@
   .bigtitle {
     max-width: 500px;
     text-align: center;
+  }
+
+  @media (min-width: $tabletSize) {
+    background-image: url(pictures/images/header/header-large.jpg)
   }
 }

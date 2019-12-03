@@ -1,27 +1,27 @@
-.boxes {
+.informationwrapper {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 1200px;
   align-items: center;
   text-align: center;
   line-height: 1em;
 
   h2 {
-    padding: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
 
-    @media ($mobileSize) {
-      padding-bottom: 1em;
-      margin-bottom: 0;
+    @media (min-width: $mobileSize) {
+      padding: 2em;
     }
   }
 
   article {
     display: flex;
     align-items: center;
-    padding-bottom: 3em;
+    padding-bottom: 0;
 
-    @media ($mobileSize) {
-      padding-bottom: 0;
+    @media (min-width: $tabletSize) {
+      padding-bottom: 3em;
     }
   }
 
@@ -50,25 +50,31 @@
   }
 }
 
-.first {
-  @media ($mobileSize) {
-    flex-direction: column-reverse;
+.informationfirstpost {
+  flex-direction: column-reverse;
+
+  @media (min-width: $tabletSize) {
+    flex-direction: row;
   }
 }
 
 
-.second {
-  @media ($mobileSize) {
-    flex-direction: column;
-  }
+.informationsecondpost {
+  flex-direction: column;
 
   .image {
     order: 1;
   }
+
+  @media (min-width: $tabletSize) {
+    flex-direction: row;
+  }
 }
 
-.third {
-  @media ($mobileSize) {
-    flex-direction: column-reverse;
+.informationthirdpost {
+  flex-direction: column-reverse;
+
+  @media (min-width: $tabletSize) {
+    flex-direction: row;
   }
 }

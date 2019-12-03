@@ -1,142 +1,153 @@
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-  grid-template-rows: 1.5fr 1fr 1.5fr;
-  min-height: 450px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-height: 400px;
   grid-template-areas:
-    "img1 img2 text img5 img6"
-    "img1 img4 text img7 img6"
-    "img3 img4 text img7 img8";
-  grid-gap: 1em;
-  max-width: 1200px;
+    "img1 img2"
+    "text text"
+    "img3 img4";
+  grid-gap: 0.5em;
+  padding: 1em;
   margin: auto;
-  padding-top: 3em;
+  max-width: 1200px;
 
-  @media ($mobileSize) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  @media (min-width: $mobileSize) {
     min-height: 350px;
+  }
+
+  @media (min-width: $tabletSize) {
+    min-height: 500px;
+  }
+
+  @media (min-width: $desktopSize) {
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1.5fr;
+    min-height: 500px;
     grid-template-areas:
-      "img1 img2"
-      "text text"
-      "img3 img4";
-    grid-gap: 0.5em;
-    padding: 0.5em;
+      "img1 img2 text img5 img6"
+      "img1 img4 text img7 img6"
+      "img3 img4 text img7 img8";
+    grid-gap: 1em;
+    padding-top: 3em;
 
   }
 }
 
 .galleryimg1 {
-  background-position: center;
-  background-size: cover;
   width: 100%;
   height: 100%;
   grid-area: img1;
 }
 
 .galleryimg2 {
-  background-position: center;
-  background-size: cover;
   width: 100%;
   height: 100%;
   grid-area: img2;
 }
 
 .galleryimg3 {
-  background-position: center;
-  background-size: cover;
   width: 100%;
   height: 100%;
   grid-area: img3;
 }
 
 .galleryimg4 {
-  background-position: center;
-  background-size: cover;
   width: 100%;
   height: 100%;
   grid-area: img4;
 }
 
 .galleryimg5 {
-  background-position: center;
-  background-size: cover;
   width: 100%;
   height: 100%;
   grid-area: img5;
+  display: none;
 
-  @media ($mobileSize) {
-    display: none;
+  @media (min-width: $tabletSize) {
+    display: unset;
   }
 }
 
 .galleryimg6 {
-  background-position: center;
-  background-size: cover;
   width: 100%;
   height: 100%;
   grid-area: img6;
+  display: none;
 
-  @media ($mobileSize) {
-    display: none;
+  @media (min-width: $tabletSize) {
+    display: unset;
   }
 }
 
 .galleryimg7 {
-  background-position: center;
-  background-size: cover;
   width: 100%;
   height: 100%;
   grid-area: img7;
+  display: none;
 
-  @media ($mobileSize) {
-    display: none;
+  @media (min-width: $tabletSize) {
+    display: unset;
   }
 }
 
 .galleryimg8 {
-  background-position: center;
-  background-size: cover;
   width: 100%;
   height: 100%;
   grid-area: img8;
+  display: none;
 
-  @media ($mobileSize) {
-    display: none;
+  @media (min-width: $tabletSize) {
+    display: unset;
   }
 }
 
 .gallerytext {
   background: white;
   display: grid;
-  align-self: center;
-  margin-left: -4em;
-  margin-right: -4em;
-  padding: 3.5em;
+  place-self: center;
+  margin-top: -2em;
+  margin-bottom: -2em;
+  padding: 2em;
   grid-area: text;
   z-index: 10;
+  max-width: 250px;
 
-  @media ($mobileSize) {
-    margin-top: -4em;
-    margin-bottom: -4em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    grid-area: text;
-    z-index: 10;
+  @media (min-width: $mobileSize) {
+    margin-block: -3em;
+    padding: 3em;
     max-width: 350px;
-    width: 100%;
-    place-self: center;
+  }
+
+  @media (min-width: $tabletSize) {
+    margin-block: -5em;
+    padding: 4.5em;
+    padding-block: 5em;
+    max-width: 550px;
+  }
+
+  @media (min-width: $desktopSize) {
+    margin-inline: -5em;
+    padding-inline: 5em;
+    margin-block: -4em;
+    padding-block: 4em;
+    max-width: 550px;
   }
 
   h3 {
-    @media ($mobileSize) {
-      margin: 0;
+    @include fontSizeMargin (1em);
+    margin-bottom: 1em;
+
+    @media (min-width: $desktopSize) {
+      font-size: unset;
     }
   }
 
   p {
-    @media ($mobileSize) {
-      margin: 0
+    @include fontSizeMargin (0.7em);
+
+    @media (min-width: $desktopSize) {
+      font-size: unset;
     }
   }
 }
