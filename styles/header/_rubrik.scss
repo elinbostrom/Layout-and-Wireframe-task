@@ -19,4 +19,13 @@
   @media (min-width: $tabletSize) {
     background-image: url(pictures/images/header/header-large.jpg)
   }
+
+  h1 {
+    color: #ff8673;
+  }
+
+  p {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
 }

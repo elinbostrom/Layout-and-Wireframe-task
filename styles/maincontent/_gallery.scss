@@ -17,7 +17,8 @@
   }
 
   @media (min-width: $tabletSize) {
-    min-height: 500px;
+    min-height: 450px;
+    padding-block: 3em;
   }
 
   @media (min-width: $desktopSize) {
@@ -103,7 +104,7 @@
 }
 
 .gallerytext {
-  background: white;
+  background: #9aa5aa;
   display: grid;
   place-self: center;
   margin-top: -2em;
@@ -137,14 +138,16 @@
   h3 {
     @include fontSizeMargin (1em);
     margin-bottom: 1em;
+    color: #ffaf89;
 
     @media (min-width: $desktopSize) {
-      font-size: unset;
+      font-size: 1.3em;
     }
   }
 
   p {
     @include fontSizeMargin (0.7em);
+    color: white;
 
     @media (min-width: $desktopSize) {
       font-size: unset;

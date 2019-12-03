@@ -4,7 +4,7 @@
   grid-template-rows: 0.5fr 1fr;
   min-height: 400px;
   grid-gap: 1em;
-  background: white;
+  background: #394951;
   grid-template-areas:
     "aboutustext"
     "aboutusimg";
@@ -44,6 +44,7 @@
 
   p {
     font-size: 14px;
+    color: white;
 
     @media (min-width: $tabletSize) {
       font-size: unset;
@@ -52,9 +53,11 @@
 
   h3 {
     font-size: 16px;
+    color: #ff8673;
 
     @media (min-width: $tabletSize) {
-      font-size: unset;
+      font-size: 24px;
+      margin-bottom: 0;
     }
   }
 }

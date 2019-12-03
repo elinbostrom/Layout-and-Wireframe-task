@@ -4,14 +4,13 @@ footer {
   align-items: center;
   justify-content: stretch;
   padding: 2em;
-  background-color: $lightGray;
-  margin-top: 1em;
+  background-color: #2d3039;
 }
 
 .footermenu {
   a {
     text-decoration: none;
-    color: black;
+    color: #eaddd9;
     padding: 0.5em;
     font-weight: bold;
     font-size: 11px;
@@ -30,7 +29,6 @@ footer {
 footer {
   @media (min-width: $tabletSize) {
     padding: 4em;
-    margin-top: 5em;
   }
 
   .logo {
