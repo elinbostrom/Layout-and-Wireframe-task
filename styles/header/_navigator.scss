@@ -12,6 +12,7 @@
   flex-wrap: wrap;
   background: #394951;
   padding: 0.2em;
+  transition: all ease-in 500ms;
 
   @media (min-width: $tabletSize) {
     padding: 0;
@@ -24,7 +25,12 @@
 
   div:first-of-type {
     margin: auto;
-    color: #ff8673;
+    transition: all ease-in 500ms;
+
+    a {
+      color: #ff8673;
+      font-size: 24px;
+    }
 
     @media (min-width: $tabletSize) {
       margin: 0;
@@ -43,21 +49,28 @@
     font-weight: bold;
     align-self: center;
     font-size: 13px;
+    transition: all ease-in 0.5s;
+
+    @media (min-width: $mobileSize) {
+      margin: 0.2em;
+      font-size: 15px;
+    }
 
     @media (min-width: $tabletSize) {
-      margin: 1em;
-      font-size: 18px;
+      margin: 0.5em;
+      font-size: 17px;
     }
   }
 
 }
 
 .logo {
+  font-family: 'Unica One', cursive;
   width: 120px;
   height: 30px;
   justify-content: center;
   display: flex;
   align-items: center;
-  font-weight: bold;
+  font-size: 24px;
   color: #ff8673;
 }

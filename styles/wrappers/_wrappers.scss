@@ -28,6 +28,7 @@ main {
 .imgwrapper {
   position: relative;
   display: block;
+  object-fit: cover;
 
   img {
     position: absolute;

@@ -8,12 +8,18 @@
   grid-template-areas:
     "aboutustext"
     "aboutusimg";
+  transition: all ease-in 0.5s;
+
+  @media (min-width: $mobileSize) {
+    min-height: 700px;
+  }
 
   @media (min-width: $tabletSize) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "aboutusimg aboutustext"
       "aboutusimg aboutustext";
+    min-height: 450px;
   }
 
   @media (min-width: $desktopSize) {
@@ -28,6 +34,7 @@
   grid-area: aboutusimg;
   max-width: 550px;
   margin: auto;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $tabletSize) {
     margin: unset;
@@ -38,9 +45,10 @@
   display: grid;
   align-self: center;
   max-width: 500px;
-  padding-inline: 1em;
+  padding: 1em;
   grid-area: aboutustext;
   margin-bottom: 0;
+  transition: all ease-in 0.5s;
 
   p {
     font-size: 14px;
@@ -54,10 +62,10 @@
   h3 {
     font-size: 16px;
     color: #ff8673;
+    margin-bottom: -0.5em;
 
     @media (min-width: $tabletSize) {
       font-size: 24px;
-      margin-bottom: 0;
     }
   }
 }

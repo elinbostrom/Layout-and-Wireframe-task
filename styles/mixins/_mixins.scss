@@ -3,3 +3,10 @@
   font-size: $fontSize;
   width: 100%;
 }
+
+@mixin headerPadding($paddingSize) {
+  padding-top: $paddingSize;
+  padding-left: $paddingSize;
+  margin: unset;
+  max-width: 400px;
+}

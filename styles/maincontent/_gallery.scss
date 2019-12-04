@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  max-height: 400px;
+  max-height: 390px;
   grid-template-areas:
     "img1 img2"
     "text text"
@@ -11,13 +11,15 @@
   padding: 1em;
   margin: auto;
   max-width: 1200px;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $mobileSize) {
-    min-height: 350px;
+    min-height: 500px;
   }
 
   @media (min-width: $tabletSize) {
-    min-height: 450px;
+    min-height: 600px;
+    max-width: 600px;
     padding-block: 3em;
   }
 
@@ -31,6 +33,7 @@
       "img3 img4 text img7 img8";
     grid-gap: 1em;
     padding-top: 3em;
+    max-width: unset;
 
   }
 }
@@ -64,6 +67,7 @@
   height: 100%;
   grid-area: img5;
   display: none;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $tabletSize) {
     display: unset;
@@ -75,6 +79,7 @@
   height: 100%;
   grid-area: img6;
   display: none;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $tabletSize) {
     display: unset;
@@ -86,6 +91,7 @@
   height: 100%;
   grid-area: img7;
   display: none;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $tabletSize) {
     display: unset;
@@ -97,6 +103,7 @@
   height: 100%;
   grid-area: img8;
   display: none;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $tabletSize) {
     display: unset;
@@ -113,6 +120,7 @@
   grid-area: text;
   z-index: 10;
   max-width: 250px;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $mobileSize) {
     margin-block: -3em;
@@ -124,7 +132,7 @@
     margin-block: -5em;
     padding: 4.5em;
     padding-block: 5em;
-    max-width: 550px;
+    max-width: 400px;
   }
 
   @media (min-width: $desktopSize) {
@@ -132,7 +140,7 @@
     padding-inline: 5em;
     margin-block: -4em;
     padding-block: 4em;
-    max-width: 550px;
+    max-width: 650px;
   }
 
   h3 {
