@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 0;
+    transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
       padding-bottom: 1em;
@@ -96,14 +97,10 @@
 }
 
 .informationthirdpost {
-  flex-direction: column-reverse;
-  transition: all ease-in 0.5s;
-
-  @media (min-width: $tabletSize) {
-    flex-direction: row;
-  }
+  @extend .informationfirstpost;
 
   @media (min-width: $desktopSize) {
     padding-bottom: 2em;
   }
+
 }

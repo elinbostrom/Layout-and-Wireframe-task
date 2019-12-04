@@ -233,6 +233,13 @@ main .informationwrapper {
   color: #ff8673;
 }
 
+@media (min-width: 610px) {
+  .rubrik h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: 850px) {
   .rubrik h1 {
     font-size: 52px;
@@ -289,6 +296,8 @@ main .informationwrapper {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 0;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 610px) {
@@ -353,7 +362,7 @@ main .informationwrapper {
   }
 }
 
-.informationfirstpost {
+.informationfirstpost, .informationthirdpost {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
@@ -363,7 +372,7 @@ main .informationwrapper {
 }
 
 @media (min-width: 610px) {
-  .informationfirstpost {
+  .informationfirstpost, .informationthirdpost {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -386,24 +395,6 @@ main .informationwrapper {
 
 @media (min-width: 610px) {
   .informationsecondpost {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.informationthirdpost {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  -webkit-transition: all ease-in 0.5s;
-  transition: all ease-in 0.5s;
-}
-
-@media (min-width: 610px) {
-  .informationthirdpost {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -470,7 +461,7 @@ main .informationwrapper {
   border: 3px solid white;
 }
 
-.tasks {
+.services {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 0.5fr 0.5fr 1fr 1fr;
@@ -488,7 +479,7 @@ main .informationwrapper {
 }
 
 @media (min-width: 610px) {
-  .tasks {
+  .services {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     -ms-grid-columns: 2fr 1fr 1fr;
@@ -501,7 +492,7 @@ main .informationwrapper {
 }
 
 @media (min-width: 850px) {
-  .tasks {
+  .services {
     -ms-grid-columns: 3fr 1fr 1fr 1fr;
         grid-template-columns: 3fr 1fr 1fr 1fr;
     padding: 6em;
@@ -511,7 +502,7 @@ main .informationwrapper {
   }
 }
 
-.tasksimg1 {
+.services__img1 {
   width: 100%;
   height: 100%;
   -ms-grid-row: 3;
@@ -519,7 +510,7 @@ main .informationwrapper {
   grid-area: taskimg1;
 }
 
-.tasksimg2 {
+.services__img2 {
   width: 100%;
   height: 100%;
   -ms-grid-row: 3;
@@ -527,12 +518,12 @@ main .informationwrapper {
   grid-area: taskimg2;
 }
 
-.tasksimg3 {
+.services__img3 {
   display: none;
 }
 
 @media (min-width: 610px) {
-  .tasksimg3 {
+  .services__img3 {
     display: unset;
     width: 100%;
     height: 100%;
@@ -541,7 +532,7 @@ main .informationwrapper {
   }
 }
 
-.tasksimg4 {
+.services__img4 {
   width: 100%;
   height: 100%;
   -ms-grid-row: 4;
@@ -550,7 +541,7 @@ main .informationwrapper {
   grid-area: taskimg4;
 }
 
-.taskspara {
+.services__text {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 1;
@@ -560,7 +551,7 @@ main .informationwrapper {
   grid-area: taskstext;
 }
 
-.para {
+.services .text {
   max-width: 330px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -569,17 +560,17 @@ main .informationwrapper {
       justify-self: center;
 }
 
-.para p {
+.services .text p {
   font-size: 12px;
 }
 
-.para h3 {
+.services .text h3 {
   color: #9d5c5f;
   font-size: 0.9em;
 }
 
 @media (min-width: 350px) {
-  .para h3 {
+  .services .text h3 {
     font-size: unset;
   }
 }
@@ -619,7 +610,7 @@ main .informationwrapper {
   }
 }
 
-.aboutusimg {
+.aboutus__img {
   width: 100%;
   height: 100%;
   -ms-grid-row: 2;
@@ -632,12 +623,12 @@ main .informationwrapper {
 }
 
 @media (min-width: 610px) {
-  .aboutusimg {
+  .aboutus__img {
     margin: unset;
   }
 }
 
-.aboutustext {
+.aboutus__text {
   display: -ms-grid;
   display: grid;
   -ms-grid-row-align: center;
@@ -652,25 +643,25 @@ main .informationwrapper {
   transition: all ease-in 0.5s;
 }
 
-.aboutustext p {
+.aboutus__text p {
   font-size: 14px;
   color: white;
 }
 
 @media (min-width: 610px) {
-  .aboutustext p {
+  .aboutus__text p {
     font-size: unset;
   }
 }
 
-.aboutustext h3 {
+.aboutus__text h3 {
   font-size: 16px;
   color: #ff8673;
   margin-bottom: -0.5em;
 }
 
 @media (min-width: 610px) {
-  .aboutustext h3 {
+  .aboutus__text h3 {
     font-size: 24px;
   }
 }
@@ -884,7 +875,7 @@ main .informationwrapper {
   }
 }
 
-footer {
+.end {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,7 +895,7 @@ footer {
   transition: all ease-in 0.5s;
 }
 
-.footermenu a {
+.end__menu a {
   text-decoration: none;
   color: #eaddd9;
   padding: 0.5em;
@@ -913,25 +904,25 @@ footer {
 }
 
 @media (min-width: 350px) {
-  .footermenu a {
+  .end__menu a {
     font-size: 15px;
   }
 }
 
 @media (min-width: 610px) {
-  .footermenu a {
+  .end__menu a {
     padding: 1em;
     font-size: 16px;
   }
 }
 
-@media (min-width: 610px) {
-  footer {
-    padding: 4em;
-  }
+.end .logo {
+  margin-bottom: 25px;
 }
 
-footer .logo {
-  margin-bottom: 25px;
+@media (min-width: 610px) {
+  .end {
+    padding: 4em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

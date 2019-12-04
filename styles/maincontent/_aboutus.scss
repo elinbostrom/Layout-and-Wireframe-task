@@ -25,23 +25,22 @@
   @media (min-width: $desktopSize) {
     min-height: 550px;
   }
-}
 
+  &__img {
+    width: 100%;
+    height: 100%;
+    grid-area: aboutusimg;
+    max-width: 550px;
+    margin: auto;
+    transition: all ease-in 0.5s;
 
-.aboutusimg {
-  width: 100%;
-  height: 100%;
-  grid-area: aboutusimg;
-  max-width: 550px;
-  margin: auto;
-  transition: all ease-in 0.5s;
-
-  @media (min-width: $tabletSize) {
-    margin: unset;
+    @media (min-width: $tabletSize) {
+      margin: unset;
+    }
   }
 }
 
-.aboutustext {
+.aboutus__text {
   display: grid;
   align-self: center;
   max-width: 500px;
