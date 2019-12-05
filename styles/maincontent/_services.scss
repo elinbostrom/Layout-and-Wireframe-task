@@ -7,6 +7,7 @@
   color: #ff8673;
   font-size: 1.5em;
   transition: all ease-in 0.5s;
+  padding: 1.5em 0.5em;
 
   @media (min-width: $mobileSize) {
     font-size: 2em;
@@ -14,6 +15,10 @@
 
   @media (min-width: $desktopSize) {
     padding: 3em;
+  }
+
+  h4 {
+    margin-top: 0;
   }
 }
 
@@ -25,12 +30,13 @@
   justify-content: center;
 
   img {
-    margin-inline: 0.2em;
+    margin: 0 0.2em;
     object-fit: contain;
     min-width: 80px;
     width: 20vw;
     max-width: 170px;
     border: 3px solid white;
+    margin-bottom: 0.5em;
   }
 }
 

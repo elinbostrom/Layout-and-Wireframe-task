@@ -11,6 +11,11 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
+
+  @media (min-width: $miniIpadSize) {
+    margin-bottom: 0.5em;
+  }
 }
 
 main {
@@ -29,6 +34,7 @@ main {
   position: relative;
   display: block;
   object-fit: cover;
+
 
   img {
     position: absolute;

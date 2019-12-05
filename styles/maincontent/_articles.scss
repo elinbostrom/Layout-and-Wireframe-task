@@ -41,9 +41,8 @@
     object-fit: contain;
     max-width: 450px;
     flex-basis: 48%;
-    margin-bottom: -10px;
 
-    @media (min-width: $mobileSize) {
+    @media (min-width: $miniIpadSize) {
       margin-bottom: unset;
     }
   }
@@ -98,6 +97,10 @@
 
 .informationthirdpost {
   @extend .informationfirstpost;
+
+  @media (min-width: $miniIpadSize) {
+    padding-bottom: 0.5em;
+  }
 
   @media (min-width: $desktopSize) {
     padding-bottom: 2em;
